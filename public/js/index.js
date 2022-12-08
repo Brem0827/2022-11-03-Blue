@@ -9,6 +9,7 @@ const userIDBtn = document.querySelector('#StudentID');
 
 const userEmailElement = document.querySelector('.user-email');
 const localuserEmail = localStorage.getItem('userEmail');
+const localuserID = localStorage.getItem('userEmail');
 
 const setUserNameInnerHtml = (name) => {
   headeruserNameElement.innerHTML = `${name}<span>님</span>`;
@@ -29,8 +30,8 @@ const setUserEmailInnerHtml = (Email) => {
 if (localuserName) {
   setUserNameInnerHtml(localuserName);
 }
-if (localuserEmail) {
-  setUserIDInnerHtml(localuserEmail);
+if (localuserID) {
+  setUserIDInnerHtml(localuserID);
 }
 if (localuserEmail) {
   setUserEmailInnerHtml(localuserEmail);
@@ -47,14 +48,14 @@ userNameElement.onclick = () => {
 };
 
 userEmailElement.onclick = () => {
-  const userEmail = prompt('아이디를 입력해 주세요');
+  const userEmail = prompt('이메일을 입력해 주세요');
   localStorage.setItem('userName', userEmail); // 새로고침을 해도 값이 유지됨
 
   setUserEmailInnerHtml(userEmail);
 };
 
 userEmailElement.onclick = () => {
-  const userID = prompt('이름을 입력해 주세요');
+  const userID = prompt('아이디를 입력해 주세요');
   localStorage.setItem('userName', userID); // 새로고침을 해도 값이 유지됨
 
   setUserIDInnerHtml(userID);
