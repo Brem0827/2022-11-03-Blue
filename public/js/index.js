@@ -3,8 +3,8 @@ const userNameElement = document.querySelector('.user-name');
 const localuserName = localStorage.getItem('userName');
 
 const setUserNameInnerHtml = (name) => {
-  headeruserNameElement.innerHTML = `${localuserName}<span>님</span>`;
-  userNameElement.innerHTML = `${localuserName}<span>님</span>`;
+  headeruserNameElement.innerHTML = `${name}<span>님</span>`;
+  userNameElement.innerHTML = `${name}<span>님</span>`;
 };
 
 if (localuserName) {
