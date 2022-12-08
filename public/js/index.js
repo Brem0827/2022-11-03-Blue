@@ -8,8 +8,9 @@ const userEmailBtn = document.querySelector('#email');
 const userIDBtn = document.querySelector('#StudentID');
 
 const userEmailElement = document.querySelector('.user-email');
+const userIDElement = document.querySelector('.user-id');
 const localuserEmail = localStorage.getItem('userEmail');
-const localuserID = localStorage.getItem('userEmail');
+const localuserID = localStorage.getItem('userID');
 
 const setUserNameInnerHtml = (name) => {
   headeruserNameElement.innerHTML = `${name}<span>님</span>`;
@@ -54,7 +55,7 @@ userEmailElement.onclick = () => {
   setUserEmailInnerHtml(userEmail);
 };
 
-userEmailElement.onclick = () => {
+userIDElement.onclick = () => {
   const userID = prompt('아이디를 입력해 주세요');
   localStorage.setItem('userName', userID); // 새로고침을 해도 값이 유지됨
 
