@@ -12,6 +12,10 @@ const userIDElement = document.querySelector('.user-id');
 const localuserEmail = localStorage.getItem('userEmail');
 const localuserID = localStorage.getItem('userID');
 
+delete localuserEmail.Email;
+delete localuserID.ID;
+delete localuserName.name;
+
 const setUserNameInnerHtml = (name) => {
   headeruserNameElement.innerHTML = `${name}<span>님</span>`;
   userNameBtn.textContent = name;
