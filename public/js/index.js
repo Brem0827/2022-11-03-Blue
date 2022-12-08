@@ -2,15 +2,15 @@ const headeruserNameElement = document.querySelector('.user');
 const headerUserIDElement = document.querySelector('.contents');
 const headerUserEmailElement = document.querySelector('.contents');
 const userNameElement = document.querySelector('.user-name');
-const localuserName = localStorage.getItem('userName');
+const localuserName = localStorage.deleteItem('userName');
 const userNameBtn = document.querySelector('#name');
 const userEmailBtn = document.querySelector('#email');
 const userIDBtn = document.querySelector('#StudentID');
 
 const userEmailElement = document.querySelector('.user-email');
 const userIDElement = document.querySelector('.user-id');
-const localuserEmail = localStorage.getItem('userEmail');
-const localuserID = localStorage.getItem('userID');
+const localuserEmail = localStorage.deleteItem('userEmail');
+const localuserID = localStorage.deleteItem('userID');
 
 const setUserNameInnerHtml = (name) => {
   headeruserNameElement.innerHTML = `${name}<span>님</span>`;
