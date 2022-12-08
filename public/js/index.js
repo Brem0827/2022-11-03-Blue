@@ -50,14 +50,14 @@ userNameElement.onclick = () => {
 
 userEmailElement.onclick = () => {
   const userEmail = prompt('이메일을 입력해 주세요');
-  localStorage.setItem('userName', userEmail); // 새로고침을 해도 값이 유지됨
+  localStorage.setItem('userEmail', userEmail); // 새로고침을 해도 값이 유지됨
 
   setUserEmailInnerHtml(userEmail);
 };
 
 userIDElement.onclick = () => {
   const userID = prompt('아이디를 입력해 주세요');
-  localStorage.setItem('userName', userID); // 새로고침을 해도 값이 유지됨
+  localStorage.setItem('userID', userID); // 새로고침을 해도 값이 유지됨
 
   setUserIDInnerHtml(userID);
 };
