@@ -1,4 +1,4 @@
-const headeruserNameElement = document.querySelector(',user');
+const headeruserNameElement = document.querySelector('.user');
 const userNameElement = document.querySelector('.user-name');
 const localuserName = localStorage.getItem('userName');
 
