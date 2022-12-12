@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>Document</title>
   <link href="./public/css/style.css" rel="stylesheet" />
 </head>
 <body>
+<form name="indexForm" method="post" action="index.html" onsubmit="return checked()">
   <header>
     <div class="title">
       대림대 <span>관리 페이지</span>      
@@ -46,8 +47,8 @@
       </div>
       <div class="user-email">
         <div class="user-id">
-        <span id="StudentID">20210101</span>
-      </div>, <span id="email">ABC@abc.com</span>
+        <span id="StudentID" onclick="checked()" required>20210101</span>
+      </div><span id="email" onclick="checked()" required>ABC@abc.com</span>
       </div>
       <div class="card-area">
         <div class="card">
@@ -83,6 +84,7 @@
       </div>
     </div>
   </section>
+</form>
   <script src="./public/js/index.js"></script>
 </body>
 </html>
